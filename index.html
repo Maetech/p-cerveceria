@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cervecería MT</title>
+    <!--!Se coloca el link CSS del Bootstrap (se usará la versión 5.0 pues se considera que es la más estable)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--!Se enlaza el link de las librerías para poder realizar las animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--!Se enlaza el archivo CSS al archivo HTML-->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!--!SE COLOCA EL HEADER DEL SITIO WEB (SE REPITE EN TODAS LAS PÁGINAS WEB)-->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid d-flex flex-column">
+                <h1>Cervecería MT</h1>
+                <a href="#"><img src="./img/logo.png" alt="logo"> </a>
+                <!--Es el botón que sale al achicar la pantalla (responsive)-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--Icono del botón del menú-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/qs.html">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/cultura.html">Cultura cervecera</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--!Aquí va el contenido de la página web-->
+    <main class="main">
+        <!--SE COLOCA LA PRIMERA SECCIÓN DEL INDEX (HERO SECTION)-->
+        <section class="hero">
+            <h2>¡La cerveza artesanal para complacer a tu paladar!</h2>
+            <img data-aos="fade-right" src="./img/cerveza.png" alt="Cerveza" />
+        </section>
+        <!--SE COLOCA LA SEGUNDA SECCIÓN DEL INDEX (¿QUIÉNES SOMOS?)-->
+        <section class="qs container-fluid"> <!--El div ayuda a separar mejor por secciones dentro del flexbox-->
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h2 class="somos">¿Quiénes somos?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                        aliquid nesciunt temporibus harum rem necessitatibus, dolor esse
+                        itaque corrupti minima dolorem tenetur assumenda! Exercitationem
+                        nisi reprehenderit molestiae in deserunt et..
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                        quidem quos officiis ad? Quasi reprehenderit ex labore,
+                        exercitationem harum neque, dolorum sed, nam illo ipsum expedita
+                        beatae deserunt ipsa. Nisi.
+                    </p>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <img data-aos="fade-left" src="./img/qs.jpg" alt="qs" />
+                </div>
+            </div>
+        </section>
+        <!--SE COLOCA LA TERCERA SECCIÓN DEL INDEX (CULTURA CERVECERA)-->
+        <section class="ccervecera container-fluid">
+            <h2>Cerveceros desde la cuna</h2>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+            recusandae eveniet fuga alias dolore, vitae nisi doloribus tempore,
+            assumenda nesciunt dolores praesentium quibusdam ipsum? Sequi ipsa
+            animi accusamus at amet..
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque
+            veritatis ratione vitae ea, eos ut officia blanditiis qui quisquam
+            architecto perspiciatis impedit vero cupiditate et excepturi quibusdam
+            in fugiat.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            nemo ut consectetur sapiente omnis, a quia accusamus nobis tempore
+            explicabo? Atque, reiciendis at dignissimos dolore porro inventore
+            ipsum obcaecati omnis?
+            </p>
+            </div>
+            <a href="./pages/cultura.html">¿Quieres saber mas?</a>
+        </section>
+        <!--SE COLOCA LA CUARTA SECCIÓN DEL INDEX (PRODUCTOS)-->
+        <section class="productos">
+            <h2 class="productos">Productos</h2>
+            <div class="productos-bloque">
+                <div data-aos="flip-down" >
+                    <img src="./img/producto-1.jpg" alt="producto-1" />
+                    <h3>Cerveza GAMMA</h3>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div data-aos="flip-down">
+                    <img src="./img/producto-2.jpg" alt="producto-2" />
+                    <h3>Cerveza STAR</h3>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div data-aos="flip-down">
+                    <img src="./img/producto-3.jpg" alt="producto-3" />
+                    <h3>Cerveza NIRVANA</h3>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div data-aos="flip-down">
+                    <img src="./img/producto-4.jpg" alt="producto-4" />
+                    <h3>Cerveza SC</h3>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div data-aos="flip-down">
+                    <img src="./img/producto-5.jpg" alt="producto-5" />
+                    <h3>Cerveza RETRO</h3>
+                    <a href="">Agregar al carrito</a>
+                </div>
+                <div data-aos="flip-down">
+                    <img src="./img/producto-6.jpg" alt="producto-6" />
+                    <h3>Cerveza OP</h3>
+                    <a href="">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+        <!--SE COLOCA LA QUINTA SECCIÓN DEL INDEX (NOVEDADES)-->
+        <section class="novedades">
+            <h2>Novedades</h2>
+            <div class="novedades-bloque" >
+                <div data-aos="flip-left" >
+                    <img src="./img/cebada.jpg" alt="cebada" />
+                    <h3>Cultivada especialmente para ti</h3>
+                    <p>
+                        Porque eres importante, todas nuestras cervezas estan preparadas
+                        con la mejor cebada
+                    </p>
+                    <a href="">¡Conoce más aquí!</a>
+                </div >
+                <div data-aos="flip-left">
+                    <img src="./img/especial.jpg" alt="especial" />
+                    <h3>Viernes de frescura</h3>
+                    <p>
+                        ¿Sin planes para el fin? ¡Nosotros somos tu opción! Todas las
+                        cervezas al 2x1 todos los viernes
+                    </p>
+                    <a href="">¡Conoce más aquí!</a>
+                </div>
+                <div data-aos="flip-left" >
+                    <img src="./img/oferta.png" alt="oferta" />
+                    <h3>
+                        Ahora contamos con diversos paquetes y ofertas en la compra de tus
+                        cervezas
+                    </h3>
+                    <p>Desde descuentos hasta cervezas gratis</p>
+                    <a href="">¡Conoce más aquí!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--!SE COLOCA EL FOOTER DEL SITIO WEB (SE REPITE EN TODAS LAS PÁGINAS)-->
+    <footer class="footer">
+        <div class="ft">
+            <h2>¡Contáctanos!</h2>
+            <img data-aos="zoom-in" src="./img/logo.png" alt="logo" />
+        </div>
+        <div class="contacto">
+            <div class="contacto-ubicacion">
+                <img src="./img/ubicacion.png" alt="Signo ubicación" />
+                <p>Av. Santa Margarita 2453, Zapopan, México</p>
+            </div>
+            <div class="contacto-telefono">
+                <img src="./img/telefono.png" alt="Signo teléfono" />
+                <p>+52 1 954 567 9372</p>
+            </div>
+            <div class="contacto-email">
+                <img src="./img/email.png" alt="Signo email" />
+                <p>servicio@cerveceriamt.com</p>
+            </div>
+        </div>
+        <div class="redes">
+            <h2>¡Síguenos en nuestras redes sociales!</h2>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"
+                        alt="Logo Facebook" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                        alt="Logo Instagram" /></a>
+                <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="Logo Twitter" /></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!--!Se coloca también el link JS del Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--!Se coloca también el JS y la inicialización para que la animación tenga efecto-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+</body>
+
+</html>
