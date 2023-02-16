@@ -1,0 +1,67 @@
+
+//! VARIABLES
+$color-mr:brown;
+$color-sr:rgba(246, 131, 43,0.977);
+
+//! LISTAS
+$font-size:
+15px,
+20px,
+25px,
+30px,
+35px,
+40px,
+50px;
+
+
+//! BOTON
+
+
+//! MIXIN
+@mixin flex($flex,$justify,$align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flexd($flex,$direction,$justify){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin flexf($flex,$justify,$wrap){
+    display: $flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+//! EXTEND
+//PLACEHOLDER
+%flex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+%flexc{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+%flexs{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+%flexn{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}

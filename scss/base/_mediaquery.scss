@@ -1,0 +1,132 @@
+/*--RESPONSIVE PARA DISPOSITIVO MÓVIL (CELULAR) DEL INDEX--*/
+@media screen and (max-width:720px) {
+    .main{
+        .hero img{
+            width: 50%;
+            height: 45%;
+        }
+        .qs{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div div img{
+                width: 60%;
+                height: 55%;
+            }
+        }
+        .ccervecera{
+            h2{
+                font-size: nth($font-size,3);
+            }
+            p{
+                font-size: nth($font-size,1);
+            }
+        }
+    } 
+    .footer{
+        flex-direction: column;
+        .ft{
+            margin-top: 20px;
+        }
+        .contacto {
+            align-items: center;
+        }
+        .redes{
+            div{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+/*--RESPONSIVE DE LA PÁGINA "¿QUIÉNES SOMOS? PARA DISPOSITIVO MÓVIL (CELULAR)--*/
+@media screen and (max-width:720px) {
+    main{
+        .proceso{
+            h2{
+                font-size: nth($font-size,3);
+            }
+            p{
+                font-size: nth($font-size,1);
+            }
+        }
+        .motivo{
+            .motivo-bloque{
+                flex-direction: column;
+                img{
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+        }
+    } 
+}
+
+
+/*--RESPONSIVE PARA DISPOSITIVO MÓVIL (CELULAR) DEL GRID DENTRO DE LA PÁGINA "CULTURA CERVECERA"--*/
+@media screen and (max-width:720px) {
+    main{
+        .cultura{
+            h2{
+                font-size: nth($font-size,2);
+            }
+            p{
+                font-size: nth($font-size,1);
+            }
+        }
+        .perfil{
+            h2{
+                font-size: nth($font-size,2);
+            }
+            .grid-perfil{
+                grid-template-columns: 1fr;
+                .grid-item{
+                    grid-column: span 2;
+                    grid-row: span 1;
+                    .item-2{
+                        grid-column: span 2;
+                    }
+                    .item-3{
+                        grid-column: span 2;
+                    }
+                    .item-4{
+                        grid-row: span 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*--RESPONSIVE DE LA PÁGINA "NOVEDADES" PARA DISPOSITIVO MÓVIL (CELULAR)--*/
+@media screen and (max-width:720px) {
+    main{
+        .nov{
+            .grid-novedades{
+                grid-template-columns: 1fr;
+                .grid-nov{
+                    grid-row: span 2;
+                    flex-direction: column;
+                    margin: 10px;
+                    div{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:720px) {
+    main{
+        form{
+            .all-inputs{
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

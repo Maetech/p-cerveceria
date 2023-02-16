@@ -1,0 +1,74 @@
+.footer{
+    @include flexd(flex,row,space-around);
+    align-items: center;
+    background-color: rgb(243, 207, 137);
+    border: 2px solid black;
+    grid-area: footer;
+    .ft{
+        @extend %flexc;
+        h2{
+            text-align: center;
+            margin-bottom: 15px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            color: rgb(82, 22, 22);
+        }
+        }
+        img{
+            width: 50px;
+            height: 55px;
+        }
+    .contacto{
+        @extend %flexc;
+        margin: 15px 10px;
+        .contacto-ubicacion{
+            @extend %flexn;
+            img{
+                width: 35px;
+                height: 35px;
+                margin: 5px;
+                padding: 3px;
+            }
+        }
+        .contacto-telefono{
+            @extend %flexn;
+            img{
+                width: 35px;
+                height: 35px;
+                margin: 5px;
+                padding: 3px;
+            }
+        }
+        .contacto-email{
+            @extend %flexn;
+            img{
+                width: 35px;
+                height: 35px;
+                margin: 5px;
+                padding: 3px;
+            }
+        }
+    }
+    .redes{
+        h2{
+            color: rgb(121, 90, 34);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            text-align: center;
+        }
+        div{
+            @include flex(flex,space-around,center);
+            margin: 15px;
+            a{
+                img{
+                    width: 90%;
+                    height: 5vh;
+                    transition: 1.2s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
