@@ -254,7 +254,7 @@ main {
         }
 
         p {
-            font-size: nth($font-size,1);
+            font-size: nth($font-size,3);
             font-family: "Libre Baskerville", serif;
             font-weight: 100;
             color: rgb(117, 117, 241);
@@ -289,7 +289,7 @@ main {
             font-family: "Libre Baskerville", serif;
             font-weight: 100;
             margin-bottom: 30px;
-            font-size: nth($font-size,2);
+            font-size: nth($font-size,4);
         }
     }
 
@@ -326,7 +326,7 @@ main {
                     text-align: justify;
                     font-family: "Libre Baskerville", serif;
                     font-weight: 100;
-                    font-size: nth($font-size,1);
+                    font-size: nth($font-size,3);
                     margin: 15px;
                 }
             }
@@ -361,7 +361,7 @@ main {
         }
 
         p {
-            font-size: nth($font-size,2);
+            font-size: nth($font-size,4);
             text-align: center;
             font-style: italic;
             padding: 3px;
