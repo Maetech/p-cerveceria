@@ -441,8 +441,8 @@ main {
 
             div {
                 border: 5px solid rgba(22, 58, 142, 0.765);
-                width: 260px;
-                height: 350px;
+                width: 270px;
+                height: 450px;
                 margin: 40px;
                 text-align: center;
                 transition: 1s;
@@ -497,31 +497,14 @@ main {
         .grid-novedades {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: 250px;
+            grid-auto-rows: 560px;
             gap: 15px;
             margin: 9px 10px;
 
-            .grid.nov {
-                grid-column: span 3;
-
-                .nov-1 {
-                    font-size: nth($font-size,1);
-                    @extend %flex;
-                    text-align: center;
-                }
-
-                .nov-2 {
-                    font-size: nth($font-size,1);
-                    @extend %flex;
-                    text-align: center;
-                }
-
-                .nov-3 {
-                    font-size: nth($font-size,1);
-                    @extend %flex;
-                    text-align: center;
-                }
-
+            .nov-1 {
+                font-size: nth($font-size,1);
+                @extend %flex;
+                text-align: center;
                 img {
                     width: 58%;
                     height: 100%;
@@ -530,17 +513,59 @@ main {
                     -webkit-box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
                     -moz-box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
                     transition: 3s;
-
+        
                     &:hover {
                         transform: rotateZ(360deg);
                     }
                 }
+            }
 
+            .nov-2 {
+                font-size: nth($font-size,1);
+                @extend %flex;
+                text-align: center;
+                img {
+                    width: 58%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
+                    -webkit-box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
+                    -moz-box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
+                    transition: 3s;
+        
+                    &:hover {
+                        transform: rotateZ(360deg);
+                    }
+                }
+                
+            }
+
+            .nov-3 {
+                font-size: nth($font-size,1);
+                @extend %flex;
+                text-align: center;
+                img {
+                    width: 58%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
+                    -webkit-box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
+                    -moz-box-shadow: 5px 6px 12px -2px rgba(112, 136, 171, 0.9);
+                    transition: 3s;
+        
+                    &:hover {
+                        transform: rotateZ(360deg);
+                    }
+                }
+            }
+            
+            .grid.nov {
+                grid-column: span 3;
                 div {
                     h2 {
                         font-family: 'Roboto Condensed', sans-serif;
-                        font-weight: 400;
-                        font-size: nth($font-size,4);
+                        font-weight: 200;
+                        font-size: nth($font-size,3);
                     }
 
                     p {
@@ -561,16 +586,15 @@ main {
 
 main {
     form {
-        width: 80%;
+        width: 100%;
         margin: auto;
         @extend %flexn;
         padding: 20px;
         border: 2px solid black;
         border-radius: 10px;
-        position: absolute;
+        position: sticky;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 100;
         font-size: nth($font-size,1);
@@ -583,7 +607,7 @@ main {
 
             div {
                 margin: 10px auto;
-                width: 48%;
+                width: 40%;
                 position: relative;
 
                 input {
@@ -600,34 +624,32 @@ main {
                         border: 2px solid blue;
                     }
                 }
-
             }
 
-            textarea {
-                margin-bottom: 5px;
-                padding: 5px;
-                width: 100%;
-                font-size: nth($font-size,2);
-                border: none;
-                border-bottom: 2px solid black;
-                transition: 0.5s;
-                background: transparent;
-                margin: auto;
-                height: 120px;
+        }
+        textarea {
+            margin-bottom: 5px;
+            padding: 5px;
+            width: 50%;
+            font-size: nth($font-size,2);
+            border: none;
+            border-bottom: 2px solid black;
+            transition: 0.5s;
+            background: transparent;
+            margin: auto;
+            height: 100px;
 
-                &:focus {
-                    border: 2px solid blue;
-                }
+            &:focus {
+                border: 2px solid blue;
             }
-
-            button {
-                width: 200px;
-                padding: 5px;
-                border: 2px solid black;
-                font-size: nth($font-size,2);
-                margin-top: 20px;
-                justify-items: center;
-            }
+        }
+        button {
+            width: 200px;
+            padding: 5px;
+            border: 2px solid black;
+            font-size: nth($font-size,2);
+            margin-top: 20px;
+            justify-items: center;
         }
     }
 }
